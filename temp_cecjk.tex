@@ -1,0 +1,86 @@
+% Encoding: UTF-8
+% Compiled by XeLaTeX
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage[slantfont,boldfont]{xeCJK}
+\usepackage{graphicx,tikz}    % 插入图片
+\usepackage{color}       % 支持彩色
+\usepackage{indentfirst} % 首行缩进宏包
+\usepackage{amsmath,amssymb,amsfonts} % AMS数学宏包
+\usepackage{bm}          % 数学符号加粗
+\usepackage{cases,multirow}       % 数学公式
+
+% 设置中文字体
+% ==========================================================
+
+\setCJKmainfont[BoldFont={SimHei},ItalicFont={KaiTi}]{SimSun}
+\setCJKsansfont{SimHei}
+\setCJKmonofont{FangSong}
+
+\setCJKfamilyfont{zhsong}{SimSun}
+\setCJKfamilyfont{zhhei}{SimHei}
+\setCJKfamilyfont{zhkai}{KaiTi}
+\setCJKfamilyfont{zhfs}{FangSong}
+\setCJKfamilyfont{zhli}{LiSu}
+\setCJKfamilyfont{zhyou}{YouYuan}
+
+\newcommand*{\songti}{\CJKfamily{zhsong}} % 宋体
+\newcommand*{\heiti}{\CJKfamily{zhhei}}   % 黑体
+\newcommand*{\kaishu}{\CJKfamily{zhkai}}  % 楷书
+\newcommand*{\fangsong}{\CJKfamily{zhfs}} % 仿宋
+\newcommand*{\lishu}{\CJKfamily{zhli}}    % 隶书
+\newcommand*{\youyuan}{\CJKfamily{zhyou}} % 幼圆
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     % 初号
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} % 小初号
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      % 一号
+\newcommand{\xiaoyihao}{\fontsize{24pt}{\baselineskip}\selectfont}  % 小一号
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      % 二号
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  % 小二号
+\newcommand{\sanhao}{\fontsize{16pt}{\baselineskip}\selectfont}     % 三号
+\newcommand{\xiaosanhao}{\fontsize{15pt}{\baselineskip}\selectfont} % 小三号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}      % 四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  % 小四号
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    % 五号
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   % 小五号
+% ==========================================================
+%%%%%%===== 页面设置 =====
+\setlength{\textwidth}{14.5cm}  % 正文宽度
+\setlength{\textheight}{20cm}   % 正文高度
+\setlength{\hoffset}{0cm}       % 左边距 = \hoffset + 1 英寸
+\setlength{\voffset}{0cm}       % 顶端距离 = \voffset + 1 英寸
+\setlength{\parskip}{3pt plus1pt minus1pt}  % 段落之间的竖直距离
+\renewcommand{\baselinestretch}{1.2}    % 定义行距
+
+%%%%%%===== 自定义命令 =====
+\sloppy
+\definecolor{lightgray}{gray}{0.5}
+\setlength{\parindent}{0pt}
+\numberwithin{equation}{section} % 设置方程编号样式
+
+\title{这是标题}
+\author{李凡}
+\date{\today}
+%%%%%%===== 标题名称中文化 =====
+\renewcommand\abstractname{\heiti 摘\ 要}
+\renewcommand\refname{\heiti 参考文献}
+\renewcommand\figurename{\heiti 图}
+\newtheorem{definition}{\heiti 定义~}[section]
+\newtheorem{theorem}{\heiti 定理~}[section]
+\newtheorem{lemma}[theorem]{\heiti 引理~}
+\newtheorem{corollary}[theorem]{\heiti 推论~}
+\newtheorem{proposition}[theorem]{\heiti 命题~}
+
+\begin{document}
+
+\maketitle
+\begin{abstract}
+这是摘要
+\end{abstract}
+\section{研究历史与意义}
+这是正文
+% 参考文献
+\begin{thebibliography}{99}
+
+\end{thebibliography}
+\clearpage
+\end{document}
